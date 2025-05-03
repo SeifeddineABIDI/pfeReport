@@ -1,0 +1,57 @@
+\chapter*{Terminologie}
+%\addcontentsline{toc}{chapter}{Liste des abréviations}
+\markboth{Liste des abréviations }{}
+
+
+\textbf{Automatisation} : c’est lorsque un processus est complètement automatisé et ne requiert aucune intervention d’un utilisateur.
+\\
+
+\textbf{Environnement de développement}
+: n’est pas seulement un IDE (Integrated
+Development Environment) comme Eclipse ou Visual Studio mais les librairies,
+les fichiers de configuration et les serveurs en font partie aussi.\\
+
+\textbf{Intégration}
+: est la combinaison des parties de code source séparées dont le but
+est de déterminer comment elles fonctionnent comme un tout.\\
+
+\textbf{Build}
+: présente l’ensemble d’activités dont l’objectif est la construction de l’application. Il comprend plusieurs tâches comme :
+\begin{itemize}
+    \item La mise à jour du code source depuis le gestionnaire de version
+    \item La compilation du code source de l’application
+    \item La génération des artefacts\\
+\end{itemize}
+
+\textbf{Une tâche (Job)}
+: est un ensemble d’instructions que le runner doit exécuter. \cite{ref3}
+L’ensemble des jobs est défini dans un fichier YAML. Nous pouvons voir en temps réel le résultat d’une tâche afin que les développeurs puissent savoir si le job a été exécuté avec succès ou bien il a échoué.
+Un job peut être automatiquement lancé lorsqu’un commit est poussé ou bien manuellement exécuté. En effet, le job manuel peut être utile, par exemple, pour
+automatiser un déploiement, mais ne le déployer que lorsque quelqu’un l’approuve manuellement. En plus, il existe des moyens qui limitent le nombre de personnes
+pouvant exécuter un job.\\
+
+\textbf{Artefact (Artifact)}
+: est généré par un job en cas d’exécution avec succès. Les
+utilisateurs peuvent télécharger cet artefact pour le tester ou bien l’utiliser
+directement \cite{ref3}.\\
+
+\textbf{Pipeline}
+: est un groupe de jobs exécutés par étapes. En effet, tous les jobs d’une même étape sont exécutés en parallèle s’il y a suffisamment de Runners simultanés disponibles \cite{ref4}.
+Le pipeline passe à l’étape suivante lorsque les jobs en cours terminent leur exécution sans erreurs. En cas d’échec d’au moins un job, l'exécution de pipeline s'arrête.\\
+
+\textbf{Runner}
+ : est une machine virtuelle, un container Docker ou un cluster de containers. Son rôle principal est de personnaliser l’environnement d’exécution du job \cite{ref4}.
+En particulier, GitLab Runner est un projet Open Source utilisé dans la fonctionnalité d’intégration continue GitLab. Ce dernier communique avec le Runner
+à travers une API pour exécuter les scripts écrits dans la configuration GitLab-CI.
+\\
+
+\textbf{GOROCO}
+ : permet de récupérer la valeur exacte de la version \cite{ref5}. Il se décompose en:
+ \begin{enumerate}
+     \item \textbf{G}eneration: la génération du logiciel
+     \item \textbf{R}evision: les services pack (le cas d’un nombre impaire implique que la version a encore des Bugs à éliminer pour la révision suivante)
+     \item \textbf{C}orrection: les mises à jour
+ \end{enumerate}
+
+ 
+ 

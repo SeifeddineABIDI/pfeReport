@@ -1,0 +1,174 @@
+\documentclass[12pt, oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{changepage}
+\usepackage{url}
+\urlstyle{same}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{import}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{setspace}
+\usepackage{chemformula}
+\usepackage{makecell}
+\usepackage{titlesec}
+\usepackage{calc}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+%\usepackage{amsmath}
+\usepackage[bottom]{footmisc}
+\usepackage{times}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage[bottom]{footmisc}
+\usepackage{colortbl} % Pour \cellcolor
+\usepackage{xcolor} 
+\usepackage{subcaption}
+%Feuille de couverture
+\title{
+\vspace{-3.0cm}
+{\Large \textbf{UNIVERSIDAD TÉCNICA FEDERICO SANTA MARÍA}}\\
+{\large DEPARTAMENTO DE INGENIERÍA QUÍMICA Y AMBIENTAL}\\
+\vspace{0.5cm}
+\includegraphics[width=7cm]{Logo_UTFSM.png}\\
+\vspace{0.35cm}
+{\Large TÍTULO DEL TRABAJO}\\
+{\Large (EN LAS LÍNEAS QUE CORRESPONDA)}\\
+\vspace{0.35cm}
+{\large \textbf{NOMBRE COMPLETO DEL/LA ALUMNO/A}}\\
+\vspace{0.35cm}
+{\normalsize MEMORIA PARA OPTAR AL TÍTULO DE INGENIERO/A CIVIL QUÍMICO/A}\\
+\vspace{1.25cm}
+{\normalsize PROFESOR/A GUÍA: NOMBRE COMPLETO}\\
+{\normalsize PROFESOR/ES CO-REFERENTE/S: NOMBRE COMPLETO}\\
+{\normalsize (UNA LÍNEA POR PROFESOR/A)}\\
+\vspace{1.0cm}
+{\normalsize MES-AAAA}
+}
+\author{\vspace{-5ex}} %dejar así
+\date{\vspace{-5ex}} %dejar así
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\centering}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+%----------
+
+%Este bloque es para adaptar los nombres a español
+
+
+\renewcommand{\figurename}{Figure}
+\renewcommand{\tablename}{Tableau}
+\renewcommand{\listfigurename}{Liste des figures}
+\renewcommand{\listtablename}{Liste des tableaux}
+\renewcommand{\contentsname}{Table des matières}
+\renewcommand{\chaptername}{Chapitre}
+\renewcommand{\maketitlehooka}{\null\mbox{}\vfill}
+\renewcommand{\maketitlehookd}{\vfill\null}
+\setlength{\arrayrulewidth}{0.1mm}
+\setlength{\tabcolsep}{15pt}
+\renewcommand{\arraystretch}{1.5}
+%----------
+\usepackage{times}%Police d'écriture
+\usepackage{pdfpages}
+%Contrôle de l'en-tête et du pied de page
+\pagestyle{fancy}
+\fancyhead[L]{\nouppercase\leftmark} %pour afficher le nom du chapitre ? gauche
+\fancyhead[C]{}
+\fancyhead[R]{\nouppercase\rightmark} %pour afficher le nom de la section ? droite
+
+\setlength{\headheight}{15pt}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\rhead{}
+\lhead{}
+\cfoot{\thepage}
+%----------
+\graphicspath{{./images/}}
+\PassOptionsToPackage{russian}{babel}
+\begin{document}
+\pagenumbering{roman} %commence par un chiffre romain pour les pages
+% \includepdf{Page-Garde}
+% \includepdf{certif.pdf}
+% \includepdf{pagegarde.pdf}
+\newpage
+
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+    \include{Dedicaces}
+    \clearpage
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}} 
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+    \include{remerciement}
+    \clearpage
+
+%Ces 3 listes seront créées automatiquement, en fonction des chapitres et sections du document 
+         %lista figuras y tablas no afecta numeración de referencias  
+\tableofcontents
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+\addcontentsline{toc}{chapter}{Terminologie}
+\include{Terminologie}
+\addcontentsline{toc}{chapter}{Liste des abréviations}
+\include{Acronymes}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+ %liste des tables
+      %liste des figures
+\clearpage
+%incluye lo contenido en nomenclatura.tex
+
+\pagenumbering{arabic}
+    \addcontentsline{toc}{chapter}{Introduction générale}
+    \include{Introduction}
+    \clearpage
+%incluye lo contenido en introduccion.tex
+
+
+
+\include{chap_01}
+\clearpage
+
+\include{chap_02}
+\clearpage
+
+\include{chap_03}
+\clearpage
+
+\include{chap_04}
+\clearpage
+
+\include{chap_05}
+\clearpage
+
+\include{chap_06}
+\clearpage
+
+% \include{chap_07}
+% \clearpage
+
+% \include{chap_08}
+% \clearpage
+%incluye lo contenido en conclusiones.tex
+
+    \include{Conclusion}
+    \clearpage
+    
+    \include{netographie}
+    \clearpage
+\bibliographystyle{plainnat}
+\bibliography{references}
+\clearpage
+  
+    \include{references}
+    \clearpage
+
+\end{document}
