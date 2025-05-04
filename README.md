@@ -9,8 +9,7 @@ The template works perfectly online (Tested on Sharelatex.com). I added some mod
 Le template fonctionne parfaitement en ligne (Testé sur Sharelatex.com). J'ai ajouté quelques modifications pour le faire fonctionner localement (Testé sur TexMaker).
 
 ---
-[📄 View the PDF in Browser](https://docs.google.com/viewer?url=https://github.com/SeifeddineABIDI/pfeReport/blob/main/main.pdf)
-
+[View the PDF](https://github.com/SeifeddineABIDI/pfeReport/main/main.pdf)
 ```latex
 %================================================================%  
 % Copyright (C) Seifeddine - All Rights Reserved                 
