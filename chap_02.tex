@@ -190,39 +190,42 @@ Ce qui nous mène à le modéliser dans le tableau \ref{tab:backlog_part1} et \r
 \clearpage
 
 \begin{table}[h!]
-\vspace*{-1.5cm}
-\begin{adjustwidth}{-3cm}{-2.7cm}
-\centering
-\renewcommand{\arraystretch}{1.1}
-\begin{tabular}{|p{0.18\textwidth}|p{0.24\textwidth}|p{0.40\textwidth}|p{0.08\textwidth}|}
-\hline
-\textbf{Sprint} & \textbf{User Story} & \textbf{Description} & \textbf{Priorité} \\
-\hline
-\multirow{5}{*}{\parbox{0.18\textwidth}{\raggedright Sprint 4 : Analyse et Améliorations}} 
-    & \textbullet\ Consulter le calendrier d’équipe & \textbullet\ \raggedright Les Utilisateurs, Managers et RH consultent les absences et événements d’équipe. & 3 \\
-    & \textbullet\ Consulter les tâches accomplies & \textbullet\ \raggedright Les Managers et RH suivent les tâches réalisées par leurs subordonnés. & 3 \\
-    & \textbullet\ Consulter les rapports & \textbullet\ \raggedright Les Utilisateurs, Managers et RH consultent des rapports sur leurs activités. & 4 \\
-    & \textbullet\ Exporter les rapports & \textbullet\ \raggedright Permet d’exporter les rapports (PDF, Excel) pour une utilisation hors ligne. & 4 \\
-    & \textbullet\ Implémentation d’un chatbot & \textbullet\ \raggedright Permet de développer et d’intégrer un chatbot dans l’application pour assister les utilisateurs dans leurs interactions (consultation, soumission de demandes, etc.). & 4 \\
-\hline
-\multirow{4}{*}{\parbox{0.18\textwidth}{\raggedright Sprint 5 : Déploiement et Pipeline DevOps}} 
-    & \textbullet\ Déployer l’application & \textbullet\ \raggedright Permet de déployer l’application sur un serveur ou une plateforme cible. & 5 \\
-    & \textbullet\ Configurer le pipeline CI/CD & \textbullet\ \raggedright Met en place un pipeline d’intégration et de déploiement continus pour automatiser les mises à jour. & 5 \\
-    & \textbullet\ Surveiller le déploiement & \textbullet\ \raggedright Les administrateurs vérifient l’état et les performances de l’application déployée. & 5 \\
-    & \textbullet\ Gérer les versions & \textbullet\ \raggedright Permet de suivre et de gérer les différentes versions de l’application déployée. & 5 \\
-\hline
-\end{tabular}
-\caption{Backlog du Produit - Partie 2}
-\label{tab:backlog_part2}
-\end{adjustwidth}
-\end{table}
+    \vspace*{-1.5cm}
+    \begin{adjustwidth}{-3cm}{-2.7cm}
+    \centering
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{|p{0.18\textwidth}|p{0.24\textwidth}|p{0.40\textwidth}|p{0.08\textwidth}|}
+    \hline
+    \textbf{Sprint} & \textbf{User Story} & \textbf{Description} & \textbf{Priorité} \\
+    \hline
+    \multirow{5}{*}{\parbox{0.18\textwidth}{\raggedright Sprint 4 : Analyse et Améliorations}} 
+        & \textbullet\ Consulter le calendrier d’équipe & \textbullet\ \raggedright Les Utilisateurs, Managers et RH consultent les absences et événements d’équipe. & 3 \\
+        & \textbullet\ Consulter les tâches accomplies & \textbullet\ \raggedright Les Managers et RH suivent les tâches réalisées par leurs subordonnés. & 3 \\
+        & \textbullet\ Consulter les rapports & \textbullet\ \raggedright Les Utilisateurs, Managers et RH consultent des rapports sur leurs activités. & 4 \\
+        & \textbullet\ Exporter les rapports & \textbullet\ \raggedright Permet d’exporter les rapports (PDF, Excel) pour une utilisation hors ligne. & 4 \\
+        & \textbullet\ Implémentation d’un chatbot & \textbullet\ \raggedright Permet de développer et d’intégrer un chatbot dans l’application pour assister les utilisateurs dans leurs interactions (consultation, soumission de demandes, etc.). & 4 \\
+    \hline
+    \multirow{6}{*}{\parbox{0.18\textwidth}{\raggedright Sprint 5 : Pipeline DevOps et Gestion GitOps}} 
+        & \textbullet\ Installation Automatisée & \textbullet\ \raggedright Créer un playbook Ansible pour installer MicroK8s, ArgoCD et leurs dépendances, incluant les add-ons Ingress et DNS, pour un déploiement rapide et fiable et configurer ArgoCD pour synchroniser automatiquement avec le dépôt k8s-manifests et gérer les déploiements. & 4 \\
+        & \textbullet\ Workflows CI & \textbullet\ \raggedright Implémenter des workflows GitHub Actions pour construire et pousser les images Docker vers DockerHub, avec mise à jour des tags dans k8s-manifests. & 5 \\
+        & \textbullet\ Runner SonarQube & \textbullet\ \raggedright Configurer un runner auto-hébergé pour exécuter SonarScanner et analyser la qualité du code dans l’instance SonarQube locale. & 5 \\
+        & \textbullet\ Gestion des Secrets & \textbullet\ \raggedright Encoder les variables sensibles (identifiants DB, tokens API) en Base64 et les gérer via des secrets Kubernetes. & 5 \\
+        & \textbullet\ Exposition des Services & \textbullet\ \raggedright Déployer des règles Ingress pour exposer les services frontend, backend et SonarQube. & 6 \\
+        & \textbullet\ Surveillance et Rollback & \textbullet\ \raggedright Vérifier la surveillance automatique des déploiements et le rollback natif d’ArgoCD en cas d’échec d’un nouveau pod. & 6 \\
+    \hline
+    \end{tabular}
+    \caption{Backlog du Produit - Partie 2}
+    \label{tab:backlog_part2}
+    \end{adjustwidth}
+    \end{table}
+    \clearpage
 \section{Planification de projet}
 Cette section a pour objectif de présenter la planification de notre projet. Pour ce faire, nous utiliserons un diagramme de Gantt qui permettra de visualiser les différentes étapes du projet sous forme de tâches à réaliser, facilitant ainsi le suivi et l’organisation du travail.
 \subsection{Diagramme de Gantt}
 Le diagramme de Gantt présenté par la figure \ref{fig:diagantt} nous permet de visualiser les différentes tâches ainsi que leurs durées.
-\newpage
+
 \begin{figure}[H]
-\vspace*{-1.8cm}
+\vspace*{-0.5cm}
      \centering
   \includegraphics[scale=0.6]{images/gantt.png}
         \caption{Diagramme de Gantt} 
@@ -232,6 +235,7 @@ Le diagramme de Gantt présenté par la figure \ref{fig:diagantt} nous permet de
 %à ajouter le diagramme le Gantt 
 \section{Environnement de travail}
 Dans cette section, nous examinerons les différentes outils technologiques adoptées dans le cadre de ce projet.
+\newpage
 \subsection{Environnement materiel}
 Durant ce projet,nous avons utilisé deux machines pour bien mener notre projet.Les caractéristiques techniques de ces machines sont présentés dans le tableau \ref{tab:specs}.
 
@@ -243,19 +247,18 @@ Durant ce projet,nous avons utilisé deux machines pour bien mener notre projet.
 \hline
 \textbf{} & \textbf{Machine 1} & \textbf{Machine 2} \\
 \hline
-\textbf{Marque} & Gigabyte AERO 15 & Lenovo IdeaPad \\
+\textbf{Marque} & Gigabyte AERO 15 & Machine virtuelle \\
 \hline
-\textbf{Système d’exploitation} & Windows 11 64 bit & Windows 10 64 bit \\
+\textbf{Système d’exploitation} & Windows 11 64 bit & Ubuntu 22.04 64 bit \\
 \hline
-\textbf{Processeur} & I7-11800H 2.3 GHz & I7-9750H 2.6 GHz \\
+\textbf{Processeur} & I7-11800H 2.3 GHz & I5-11400F 2.6 GHz \\
 \hline
-\textbf{RAM} & 16 GB 3200MHz & 8 GB \\
+\textbf{RAM} & 16 GB 3200MHz & 16 GB 3200MHz \\
 \hline
 \textbf{Disque Dur} & 1 TB & 500 GB \\
 \hline
 \end{tabularx}
 \end{table}
-\newpage
 \subsection{Environnement logiciel}
 Dans cette section, nous présentons l’environnement logiciel utilisé dans ce projet :
 
@@ -282,7 +285,6 @@ Dans cette section, nous présentons l’environnement logiciel utilisé dans ce
     \caption{Logo de WampServer}
     \label{fig:wamp}
 \end{figure}
-\newpage
 \item \textbf{phpMyAdmin}:Dont le logo est représenté dans la figure \ref{fig:phpmyadmin}, phpMyAdmin est une interface web permettant d’administrer facilement des bases de données MySQL ou MariaDB. Il offre aux utilisateurs un accès simplifié pour gérer les tables, exécuter des requêtes SQL, importer ou exporter des données, le tout sans avoir à utiliser la ligne de commande.
  \begin{figure}[h]
     \centering
