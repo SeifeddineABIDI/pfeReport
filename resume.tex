@@ -1,42 +1,28 @@
-\chapter*{\huge Résumé}
-%\addcontentsline{toc}{chapter}{Résumé}
+\begin{samepage}
+    % No \chapter* here to avoid page breaks
+    
+    % Reduce spacing and adjust font sizes
+    \begin{spacing}{1.3}
+    \vspace{-1.5cm}  % Adjust vertical space if needed
+    
+    % Résumé section with proper formatting
+    \section*{\Huge Résumé}
+    \addcontentsline{toc}{section}{Résumé}  % TOC entry for Résumé
+    
+    \noindent
+    \parbox{\textwidth}{
+    Ce projet de fin d'études, réalisé au sein de SIGA, présente le développement et le déploiement d'un « Portail de Gestion des Approbations avec Workflows Dynamiques ». Face à la complexité des processus d'approbation dans les organisations, ce portail vise à centraliser et optimiser la soumission, le suivi et la validation des demandes grâce à une interface intuitive basée sur Angular, un backend robuste avec Spring Boot, et des workflows dynamiques orchestrés par Camunda. Une approche DevOps a été adoptée, intégrant un pipeline CI/CD avec GitHub Actions, la conteneurisation via Docker, et l'orchestration avec Kubernetes et ArgoCD, complétée par une gestion sécurisée des secrets. Réalisé entre janvier 2025 et mai 2025, ce projet a permis de livrer une solution scalable et fiable. Les perspectives incluent une extension à des environnements multi-clusters.
+    }
 
-
-\begin{spacing}{1.2}
-
-Ce stage s'inscrit dans le cadre du projet de fin d'études afin d'obtenir le diplôme National d'Ingénieur en Informatique de L'École supérieure privée d'ingénierie et de technologie.\\
-Le projet consiste à  mettre en place des chaînes CI/CD avec Gitlab-CI pour le Frontend et le Backend, séparer ces composants, publier les livrables sur Artifactory, générer automatiquement des fichiers de configuration, optimiser les temps d'exécution, et assurer une stratégie de rollback en cas de déploiement échoué.\\
-L'idée est de privilégier un niveau d'automatisation dans tout le cycle de vie de l'application et mettre en place une chaîne CI/CD permettant à l'équipe de déployer, modifier, désinstaller différentes versions de code sur différents environnements en fonction de la branche/tag via des pipelines GitLab CI et Orange Deployment Engine (ODE).\\
-
-\textbf{Mots clés} : Intégration continue, Déploiement continu, Orange Deployment Engine, Gestion de configuration
-% Mots clés : CI/CD, Gitlab-CI, Automatisation des Tests, RobotFramework, Images Docker, Maven, Testing Angular, Protractor, Sonarqube, Checkmarx, JFrog Artifactory, Ansible, Orange Deployment Engine
-
-\emergencystretch=2cm
-
-
-\end{spacing}
-\newpage
-\chapter*{\huge Abstract}
-% \begin{flushleft}
-%     \bf\huge
-%     Abstract
-% \end{flushleft}
-
-
-\begin{spacing}{1.2}
-\vspace{0.6cm}
-
-This internship is part of the final year project aimed at obtaining the National Engineer's degree in Computer Science from the Private Higher School of Engineering and Technology.\\
-The project involves implementing CI/CD pipelines using Gitlab-CI for both the Frontend and Backend, separating these components, publishing deliverables on Artifactory, automatically generating configuration files, optimizing execution times, and ensuring a rollback strategy in case of deployment failure.\\
-
-The idea is to prioritize a level of automation throughout the application's lifecycle and establish a CI/CD pipeline that allows the team to deploy, modify, and uninstall different code versions on various environments based on branches/tags through GitLab CI pipelines and the Orange Deployment Engine (ODE).\\
-
-\textbf{Keywords} : Continuous Integration, Continuous Deployment, Test automation, Orange Deployment Engine, Configuration Management
-% Keywords: CI/CD, Gitlab-CI, Test automation, RobotFramework, Docker Images, Maven, Testing Angular, Protractor, Sonarqube, Checkmarx, JFrog Artifactory,
-% Ansible, Orange Deployment Engine
-
-
-
-\emergencystretch=2cm
-
-\end{spacing}
+    \vspace{1.4cm}  % Space between Résumé and Abstract
+    
+    % Abstract section with proper formatting
+    \section*{\Huge Abstract}
+    \addcontentsline{toc}{section}{Abstract}  % TOC entry for Abstract
+    
+    \noindent
+    \parbox{\textwidth}{
+    This final-year project, conducted at SIGA, details the development and deployment of an "Approval Management Portal with Dynamic Workflows." Addressing the complexity of approval processes in organizations, the portal aims to centralize and streamline request submission, tracking, and validation through an intuitive Angular-based interface, a robust Spring Boot backend, and dynamic workflows managed by Camunda. A DevOps approach was implemented, incorporating a CI/CD pipeline with GitHub Actions, containerization with Docker, and orchestration using Kubernetes and ArgoCD, alongside secure secret management. Developed between January 2025 and May 2025, the project delivered a scalable and reliable solution. Future prospects include expanding to multi-cluster environments.
+    }
+    \end{spacing}
+    \end{samepage}

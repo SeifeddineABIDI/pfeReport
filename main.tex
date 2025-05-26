@@ -108,7 +108,9 @@
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
     \include{remerciement}
     \clearpage
-
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+\include{resume}
+\clearpage
 %Ces 3 listes seront créées automatiquement, en fonction des chapitres et sections du document 
          %lista figuras y tablas no afecta numeración de referencias  
 \tableofcontents
@@ -164,11 +166,9 @@
     
     \include{netographie}
     \clearpage
-\bibliographystyle{plainnat}
-\bibliography{references}
-\clearpage
-  
-    \include{references}
+    \addcontentsline{toc}{chapter}{Bibliographie} % Ajout dans la table des matières avec le nouveau titre
+    \renewcommand{\bibname}{Bibliographie} % Change le titre de la section bibliographie
+    \bibliographystyle{plainnat}
+    \bibliography{references} % Utilise uniquement references.bib
     \clearpage
-
 \end{document}
