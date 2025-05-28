@@ -1,8 +1,192 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Agile Alliance}(2025)]{ref27}
+{Agile Alliance}.
+\newblock Agile manifesto, 2025.
+\newblock URL \url{https://agilemanifesto.org/}.
+\newblock Consulté le 10/05/2025.
+
+\bibitem[{ArgoCD}(2025)]{ref4}
+{ArgoCD}.
+\newblock Argocd documentation, 2025.
+\newblock URL \url{https://argo-cd.readthedocs.io/en/stable/}.
+\newblock Consulté le 15/03/2025.
+
+\bibitem[{Camunda}(2025{\natexlab{a}})]{ref14}
+{Camunda}.
+\newblock Camunda modeler for bpmn modeling, 2025{\natexlab{a}}.
+\newblock URL \url{https://camunda.com/products/modeler/}.
+\newblock Consulté le 08/04/2025.
+
+\bibitem[{Camunda}(2025{\natexlab{b}})]{ref18}
+{Camunda}.
+\newblock Gestion des processus métiers avec camunda, 2025{\natexlab{b}}.
+\newblock URL \url{https://docs.camunda.org/manual/latest/}.
+\newblock Consulté le 18/04/2025.
+
+\bibitem[{Camunda}(2025{\natexlab{c}})]{ref28}
+{Camunda}.
+\newblock Camunda optimize for process analytics, 2025{\natexlab{c}}.
+\newblock URL \url{https://camunda.com/products/optimize/}.
+\newblock Consulté le 12/05/2025.
+
+\bibitem[{Camunda}(2025{\natexlab{d}})]{ref5}
+{Camunda}.
+\newblock Introduction to bpmn 2.0, 2025{\natexlab{d}}.
+\newblock URL \url{https://camunda.com/bpmn/}.
+\newblock Consulté le 18/03/2025.
+
+\bibitem[{Camunda}(2025{\natexlab{e}})]{ref6}
+{Camunda}.
+\newblock Camunda platform overview, 2025{\natexlab{e}}.
+\newblock URL \url{https://camunda.com/platform/}.
+\newblock Consulté le 18/03/2025.
+
+\bibitem[{Git}(2025)]{ref12}
+{Git}.
+\newblock Git documentation, 2025.
+\newblock URL \url{https://git-scm.com/doc}.
+\newblock Consulté le 02/04/2025.
+
+\bibitem[{GitHub}(2025)]{ref25}
+{GitHub}.
+\newblock Github actions for ci/cd, 2025.
+\newblock URL \url{https://docs.github.com/en/actions}.
+\newblock Consulté le 05/05/2025.
+
+\bibitem[{IBM}(2025)]{ref20}
+{IBM}.
+\newblock Ai-powered chatbots in business applications, 2025.
+\newblock URL
+  \url{https://www.ibm.com/watson/developercloud/doc/conversation/}.
+\newblock Consulté le 22/04/2025.
+
+\bibitem[{JavaTpoint}(2025)]{ref23}
+{JavaTpoint}.
+\newblock Smtp configuration for email notifications, 2025.
+\newblock URL \url{https://www.javatpoint.com/smtp}.
+\newblock Consulté le 30/04/2025.
+
+\bibitem[{JetBrains}(2025)]{ref21}
+{JetBrains}.
+\newblock Using intellij idea for java development, 2025.
+\newblock URL \url{https://www.jetbrains.com/idea/documentation/}.
+\newblock Consulté le 25/04/2025.
+
+\bibitem[{JWT}(2025)]{ref24}
+{JWT}.
+\newblock Json web token (jwt) introduction, 2025.
+\newblock URL \url{https://jwt.io/introduction}.
+\newblock Consulté le 02/05/2025.
+
+\bibitem[{Kubernetes}(2025{\natexlab{a}})]{ref13}
+{Kubernetes}.
+\newblock Introduction to kubernetes, 2025{\natexlab{a}}.
+\newblock URL \url{https://kubernetes.io/docs/home/}.
+\newblock Consulté le 05/04/2025.
+
+\bibitem[{Kubernetes}(2025{\natexlab{b}})]{ref30}
+{Kubernetes}.
+\newblock Kubernetes security best practices, 2025{\natexlab{b}}.
+\newblock URL \url{https://kubernetes.io/docs/concepts/security}.
+\newblock Consulté le 18/05/2025.
+
+\bibitem[{Meta AI}(2025)]{ref29}
+{Meta AI}.
+\newblock Llama model overview, 2025.
+\newblock URL \url{https://ai.meta.com/llama/}.
+\newblock Consulté le 15/05/2025.
+
+\bibitem[{MicroK8s}(2025)]{ref8}
+{MicroK8s}.
+\newblock Microk8s documentation, 2025.
+\newblock URL \url{https://microk8s.io/docs}.
+\newblock Consulté le 22/03/2025.
+
+\bibitem[{Microsoft}(2025)]{ref26}
+{Microsoft}.
+\newblock Visual studio code documentation, 2025.
+\newblock URL \url{https://code.visualstudio.com/docs}.
+\newblock Consulté le 08/05/2025.
+
+\bibitem[{Ollama}(2025)]{ref15}
+{Ollama}.
+\newblock Implementing a chatbot with ollama, 2025.
+\newblock URL \url{https://ollama.ai/docs}.
+\newblock Consulté le 10/04/2025.
+
+\bibitem[{OpenClassrooms}(2025)]{ref2}
+{OpenClassrooms}.
+\newblock Introduction à la méthodologie devops, 2025.
+\newblock URL
+  \url{https://openclassrooms.com/fr/courses/6093671-decouvrez-la-methodologie-devops}.
+\newblock Consulté le 12/03/2025.
+
+\bibitem[{Oracle}(2025)]{ref19}
+{Oracle}.
+\newblock Introduction to human resources management systems, 2025.
+\newblock URL
+  \url{https://www.oracle.com/human-capital-management/what-is-hcm/}.
+\newblock Consulté le 20/04/2025.
+
+\bibitem[{phpMyAdmin}(2025)]{ref22}
+{phpMyAdmin}.
+\newblock phpmyadmin documentation, 2025.
+\newblock URL \url{https://docs.phpmyadmin.net/en/latest/}.
+\newblock Consulté le 28/04/2025.
+
+\bibitem[{Red Hat}(2025)]{ref11}
+{Red Hat}.
+\newblock Guide to continuous integration/continuous deployment (ci/cd), 2025.
+\newblock URL \url{https://www.redhat.com/en/topics/devops/what-is-ci-cd}.
+\newblock Consulté le 30/03/2025.
+
+\bibitem[{Scrum.org}(2025)]{ref10}
+{Scrum.org}.
+\newblock Méthodologie scrum, 2025.
+\newblock URL \url{https://www.scrum.org/resources/what-is-scrum}.
+\newblock Consulté le 28/03/2025.
+
+\bibitem[{SIGA}(2025)]{ref1}
+{SIGA}.
+\newblock Système informatique et gestion automatisée, 2025.
+\newblock URL \url{https://www.siga.tn}.
+\newblock Consulté le 10/03/2025.
+
+\bibitem[{SonarQube}(2025)]{ref9}
+{SonarQube}.
+\newblock Sonarqube for code quality, 2025.
+\newblock URL \url{https://docs.sonarqube.org/latest/}.
+\newblock Consulté le 25/03/2025.
+
+\bibitem[{Spring}(2025{\natexlab{a}})]{ref16}
+{Spring}.
+\newblock Spring boot documentation, 2025{\natexlab{a}}.
+\newblock URL \url{https://spring.io/projects/spring-boot}.
+\newblock Consulté le 12/04/2025.
+
+\bibitem[{Spring}(2025{\natexlab{b}})]{ref17}
+{Spring}.
+\newblock Websocket avec spring, 2025{\natexlab{b}}.
+\newblock URL \url{https://spring.io/guides/gs/messaging-stomp-websocket/}.
+\newblock Consulté le 15/04/2025.
+
+\bibitem[{Visual Paradigm}(2025)]{ref7}
+{Visual Paradigm}.
+\newblock Uml diagrams for software development, 2025.
+\newblock URL
+  \url{https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-uml/}.
+\newblock Consulté le 20/03/2025.
+
+\bibitem[{Weaveworks}(2025)]{ref3}
+{Weaveworks}.
+\newblock Guide to gitops principles, 2025.
+\newblock URL \url{https://www.weave.works/blog/gitops-principles}.
+\newblock Consulté le 15/03/2025.
 
 \end{thebibliography}

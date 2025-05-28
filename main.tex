@@ -9,13 +9,13 @@
 \usepackage{float}
 \usepackage{import}
 \usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
 \usepackage{setspace}
 \usepackage{chemformula}
 \usepackage{makecell}
 \usepackage{titlesec}
 \usepackage{calc}
 \usepackage{titling}
-\usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{longtable}
 \usepackage{multicol}
@@ -75,8 +75,7 @@
 \setlength{\tabcolsep}{15pt}
 \renewcommand{\arraystretch}{1.5}
 %----------
-\usepackage{times}%Police d'écriture
-\usepackage{pdfpages}
+
 %Contrôle de l'en-tête et du pied de page
 \pagestyle{fancy}
 \fancyhead[L]{\nouppercase\leftmark} %pour afficher le nom du chapitre ? gauche
@@ -164,11 +163,13 @@
     \include{Conclusion}
     \clearpage
     
-    \include{netographie}
-    \clearpage
-    \addcontentsline{toc}{chapter}{Bibliographie} % Ajout dans la table des matières avec le nouveau titre
-    \renewcommand{\bibname}{Bibliographie} % Change le titre de la section bibliographie
+    % \include{netographie}
+    % \clearpage
+    \addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+    \addcontentsline{toc}{chapter}{Bibliographie}
+    \renewcommand{\bibname}{Bibliographie}
+    \nocite{*}
     \bibliographystyle{plainnat}
-    \bibliography{references} % Utilise uniquement references.bib
+    \bibliography{references}
     \clearpage
 \end{document}
