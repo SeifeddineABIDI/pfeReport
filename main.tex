@@ -21,7 +21,7 @@
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage{array}
-\usepackage[T1]{fontenc}
+\usepackage[T2A,T1]{fontenc}
 %\usepackage{amsmath}
 \usepackage[bottom]{footmisc}
 \usepackage{times}
@@ -90,7 +90,12 @@
 \cfoot{\thepage}
 %----------
 \graphicspath{{./images/}}
-\PassOptionsToPackage{russian}{babel}
+% Add Russian language and Cyrillic font encoding support
+\usepackage[russian,french]{babel} % Add your main language if not french
+% Example usage of Russian text:
+% \begin{otherlanguage}{russian}
+% Пример текста на русском языке: а (Latin), а (Cyrillic)
+% \end{otherlanguage}
 \begin{document}
 \pagenumbering{roman} %commence par un chiffre romain pour les pages
 % \includepdf{Page-Garde}
